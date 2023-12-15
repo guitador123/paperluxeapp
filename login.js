@@ -5,8 +5,8 @@ function auth(){
     if(login == 'guiberchol123@outlook.com' && pass == '10121330'){
         window.alert('Sucessfully Login')
         setTimeout(function(){
-            window.location.replace('modelo.html')
-        }, 5000)
+            window.location.href = 'modelo.html'
+        }, 2000)
     } else{
         window.alert('Wrong Login')
     }
