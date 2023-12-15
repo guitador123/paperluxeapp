@@ -34,7 +34,18 @@
             </div>
         </div>
     </section>
-    <script src="login.js"></script>
+    <script>
+        function auth(){
+            var login = String(document.getElementById('logintxt').value)
+            var pass =  String(document.getElementById('passtxt').value)
+            if(login == 'guiberchol123@outlook.com' && pass == '10121330'){
+                window.alert('Sucessfully Login')
+                window.location.href = 'https://guitador123.github.io/paperluxeapp/modelo'
+            } else{
+                window.alert('Wrong Login')
+            }
+}
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
