@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Luxe App</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="" alt="PaperLuxeApp">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Criando a caixa</h1>
+    </header>
+    <main>
+        <section class="formulario">
+            <div class="selector">
+                <input type="button" value="Maleta" id="maleta" onclick="maletaSelected()">
+                <input type="button" value="Sedex" id="sedex" onclick="sedexSelected()">
+            </div>
+            <div id="medidas">
+                <p id="comp">
+                    Comprimento: <input type="number" name="txtcomp" id="txtcomp">
+                </p>
+                <p id="larg">
+                    Largura: <input type="number" name="txtlarg" id="txtlarg">
+                </p>
+                <p id="alt">
+                    Altura: <input type="number" name="txtalt" id="txtalt">
+                </p>
+                <p id="gram">
+                    Gramatura: <input type="number" name="txtgram" id="txtgram">
+                </p>
+            <div id="onda">
+                <select name="tipoOnda" id="tipoOnda" onchange="selectOnda()">
+                    <option value="0">Seleciona a onda desejada</option>
+                    <option value="1">Onda B</option>
+                    <option value="2">Onda C</option>
+                    <option value="3">Onda E</option>
+                    <option value="4">Onda BC</option>
+                </select>
+            </div>
+            </div>
+            <p id="btn">
+                <input type="button" value="Enviar" id="enviarbtn" onclick="enviar()">
+            </p>
+            <div id="res">Complete o formulário para obter o resultado!</div>
+    
+        </section>
+    
+        <section class="previa">
+            <div class="previsualizacao">
+                <h4>Pré-Visualização da caixa</h4>
+            </div>
+            <img id="img">
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; Guilherme Berchol / Paper Luxe</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
